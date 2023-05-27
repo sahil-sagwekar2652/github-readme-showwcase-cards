@@ -1,50 +1,101 @@
 {
   "activity": {
-    "emoji": "👋",
-    "message": "Just joined"
+    "message": "Teaching",
+    "emoji": "🚀"
   },
-  "id": 100804,
-  "displayName": "Sahil Sagwekar",
-  "username": "sahil-sagwekar2652",
+  "id": 4187,
+  "displayName": "Tapas Adhikary",
+  "username": "atapas398",
   "language": "en",
-  "githubProfile": "sahil-sagwekar2652",
-  "headline": "Student | Developer | Open Source Enthusiast and Technical Writer.",
-  "location": "Dombivli",
-  "locationId": 9687,
-  "resumeUrl": "https://resume.showwcase.com/sahil-sagwekar2652.pdf",
-  "about": null,
-  "role": "user",
-  "theme": "system",
+  "githubProfile": "atapas",
+  "headline": "Educator | Teaching JavaScript/React/FullStack | Head of Content @ShowwcaseHQ | Writer | YouTuber | Founder reactplay.io",
+  "location": "World",
+  "locationId": 3723,
+  "resumeUrl": "https://resume.showwcase.com/atapas398.pdf",
+  "about": "17+ years of experience in Software Development and User Interface\nEngineering. Bringing forth expertise in software systems design, development, and\ndelivery. Equipped with a diverse and promising\nskill set. Proficient in various platforms, and languages. Able to effectively\nself-manage during independent projects and collaborate as part\nof a productive team.\n\nA passionate content creator who wrote over 250+ articles on his \nblog and many other freelancing engagements like freeCodeCamp,\nCSS-Tricks, and many more. Always up for knowledge sharing with tips\nand tricks on Twitter and recently launched YouTube channel.\nAn open-source enthusiast created several projects in the areas of web\ndevelopment to create tools, mentoring resources, and guides.",
+  "role": "admin",
+  "theme": "dark",
   "ban": null,
   "appleId": null,
-  "profilePictureKey": "1680201821508.jpg",
-  "profileCoverImageKey": null,
+  "profilePictureKey": "https://profile-assets.showwcase.com/4187/1645381241792-79FB9C2F-57D4-4E37-AF6B-FE05D87754C9.jpeg",
+  "profileCoverImageKey": "https://profile-assets.showwcase.com/4187/1630297473763-Knowledge%2520Shared%2520%253D%253D%2520Knowledge%2520Gained.png",
   "onboarded": true,
-  "totalWorkedWiths": 0,
-  "totalFollowers": 0,
-  "totalThreads": 2,
-  "totalProjects": 0,
-  "totalFollowing": 3,
-  "totalInvited": 0,
-  "domain": "sahil-sagwekar2652.showwcase.com",
-  "lastNewsletterAt": "2023-04-05T05:49:43.000Z",
-  "createdAt": "2023-03-30T18:43:41.000Z",
-  "updatedAt": "2023-05-05T17:58:33.000Z",
+  "totalWorkedWiths": 71,
+  "totalFollowers": 3180,
+  "totalThreads": 1859,
+  "totalProjects": 60,
+  "totalFollowing": 98,
+  "totalInvited": 34,
+  "domain": "atapas398.showwcase.com",
+  "lastNewsletterAt": "2023-05-14T01:19:19.000Z",
+  "createdAt": "2021-05-11T15:49:29.000Z",
+  "updatedAt": "2023-05-24T20:19:13.000Z",
   "deletedAt": null,
-  "custom_domain": null,
-  "badges": [],
-  "tags": [],
-  "engagement": {
-    "totalThreadReplies": 0,
-    "totalThreadUpvotes": 1,
-    "totalPublishedShows": 0,
-    "totalPublishedSeries": 0
+  "custom_domain": {
+    "id": 19,
+    "userId": 4187,
+    "domain": "shows.tapasadhikary.com",
+    "createdAt": "2021-12-01T09:17:31.000Z",
+    "updatedAt": "2021-12-01T09:17:31.000Z"
   },
-  "isCreator": false,
-  "profilePictureUrl": "https://profile-assets.showwcase.com/1680201821508.jpg",
+  "badges": [
+    "founding_creator",
+    "community_lead"
+  ],
+  "tags": [
+    {
+      "color": "#7090E8",
+      "name": "Software Engineering",
+      "icon": "Code"
+    },
+    {
+      "color": "#5BACA3",
+      "name": "Creator",
+      "icon": "Hashtag"
+    },
+    {
+      "color": "#56CCF2",
+      "name": "Open Source",
+      "icon": "Open Lock"
+    },
+    {
+      "color": "#F2994A",
+      "name": "Machine Learning Engineer",
+      "icon": "Variable"
+    },
+    {
+      "color": "#DE565B",
+      "name": "Blogger",
+      "icon": "Pencil"
+    },
+    {
+      "color": "#5BACA3",
+      "name": "React Developer",
+      "icon": "Code"
+    },
+    {
+      "color": "#56CCF2",
+      "name": "Web Developer",
+      "icon": "Desktop Computer"
+    },
+    {
+      "color": "#9B51E0",
+      "name": "YouTuber",
+      "icon": "Terminal"
+    }
+  ],
+  "engagement": {
+    "totalThreadReplies": 1286,
+    "totalThreadUpvotes": 3596,
+    "totalPublishedShows": 54,
+    "totalPublishedSeries": 3
+  },
+  "isCreator": true,
+  "profilePictureUrl": "https://profile-assets.showwcase.com/4187/1645381241792-79FB9C2F-57D4-4E37-AF6B-FE05D87754C9.jpeg",
+  "customDomainLayout": "modern",
   "isOnline": true,
   "isOpenToConnect": "anyone",
-  "isAdmin": false,
+  "isAdmin": true,
   "isFollowed": false,
   "isColleague": false
 }

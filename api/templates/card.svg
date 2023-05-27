@@ -1,0 +1,21 @@
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='400' height='300'>
+  <circle cx='100' cy='100' r='50' fill='#f0f0f0' />
+  <image xlink:href='https://profile-assets.showwcase.com/4187/1645381241792-79FB9C2F-57D4-4E37-AF6B-FE05D87754C9.jpeg' x='50' y='50' width='100' height='100' clip-path='url(#circleCrop)' />
+
+  <text x='180' y='70' font-family='Arial' font-size='18' fill='#333333'>@atapas398</text>
+  <text x='180' y='100' font-family='Arial' font-size='14' fill='#666666'>Educator | Teaching JavaScript/React/FullStack | Head of Content @ShowwcaseHQ | Writer | YouTuber | Founder reactplay.io</text>
+
+  <text x='180' y='150' font-family='Arial' font-size='14' fill='#333333'>Total Followers: 100</text>
+  <text x='180' y='170' font-family='Arial' font-size='14' fill='#333333'>Total Projects: 50</text>
+
+  <a xlink:href='https://resume.showwcase.com/atapas398.pdf'>
+    <rect x='180' y='200' width='120' height='40' rx='5' ry='5' fill='#007bff' />
+    <text x='240' y='225' font-family='Arial' font-size='14' fill='#ffffff' text-anchor='middle'>View Resume</text>
+  </a>
+
+  <defs>
+    <clipPath id='circleCrop'>
+      <circle cx='100' cy='100' r='50' />
+    </clipPath>
+  </defs>
+</svg>
