@@ -86,5 +86,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     profile = profileParser(args.api_key, args.username, args.theme)
-    data = profile.get_data()
-    print(data)
+    card_content = profile.parse_profile()
+
+    FileUpdater.update(args.readme_path, "SHOWWCASE_PROFILE", card_content)

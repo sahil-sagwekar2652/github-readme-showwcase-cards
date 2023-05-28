@@ -1,0 +1,59 @@
+name: "GitHub Readme Showwcase Cards"
+author: "Sahil Sagwekar"
+description: "Workflow for displaying your Showwcase profile as an SVG"
+
+inputs:
+  api_key:
+    description: "Your Showwcase API key"
+    required: true
+  username:
+    description: "Your Showwcase username"
+    required: true
+  theme:
+    description: "The theme for your profile (light || dark)"
+    required: false
+    default: "dark"
+  commit_message:
+    description: "The commit message for the workflow"
+    required: false
+    default: "Updated Showwcase profile card"
+  readme_path:
+    description: "The path to your README.md file"
+    required: false
+    default: "README.md"
+  author_name:
+    description: "The name of the author"
+    required: false
+    default: "Sahil Sagwekar"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      shell: bash
+      run: |
+        python -m pip install -r ${{ github.action_path }}/requirements.txt
+
+    - name: Update readme
+      shell: bash
+      run: |
+        python update_readme.py \
+        --api-key ${{ inputs.api_key }} \
+        --username ${{ inputs.username }} \
+        --theme ${{ inputs.theme }} \
+        --readme-path ${{ inputs.readme_path }}
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        message: ${{ inputs.commit_message }}
+        author_name: ${{ github.actor }}
+        author_email: ${{ github.actor }}@users.noreply.github.com
