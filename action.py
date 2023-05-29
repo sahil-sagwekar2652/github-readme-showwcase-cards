@@ -24,7 +24,7 @@ class profileParser:
             "headline": data["headline"],
             "avatar": data["profilePictureKey"],
             "profile_url": data["domain"],
-            "resume": data["resume"],
+            "resume": data["resumeUrl"],
             "theme": self.theme,
         }
         card_content = f"![{params['username']}]({self.base_url}?{urllib.parse.urlencode(params)})"  # noqa: E501
