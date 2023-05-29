@@ -48,7 +48,7 @@ runs:
     - name: Update readme
       shell: bash
       run: |
-        python update_readme.py \
+        python ${{ github.action_path }}/action.py \
         --api-key ${{ inputs.api_key }} \
         --username ${{ inputs.username }} \
         --theme ${{ inputs.theme }} \
