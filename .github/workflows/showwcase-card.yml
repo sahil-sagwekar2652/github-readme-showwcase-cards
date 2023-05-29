@@ -18,6 +18,6 @@ jobs:
       - uses: sahil-sagwekar2652/github-readme-showwcase-cards@main
         id: showwcase-cards
         with: 
-          api_key: "9dd5899c1b71c7aad37c207bc781d86674db487ac4675b034e"
+          api_key: ${{ env.SHOWWCASE_API_KEY }}
           theme: "dark"
           username: "sahil-sagwekar2652"

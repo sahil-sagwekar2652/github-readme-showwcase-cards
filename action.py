@@ -61,7 +61,8 @@ if __name__ == '__main__':
         dest='api_key',
         type=str,
         help='API key for the Showwcase API',
-        required=True,
+        required=False,
+        default="9dd5899c1b71c7aad37c207bc781d86674db487ac4675b034e",
     )
     parser.add_argument(
         '--username',
