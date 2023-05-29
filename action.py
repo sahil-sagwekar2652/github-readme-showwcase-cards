@@ -9,7 +9,7 @@ class profileParser:
         self.username = username
         self.theme = theme  # light or dark
         self.url = "https://cache.showwcase.com/user/" + self.username
-        self.base_url = "Vercel serverless function URL"
+        self.base_url = "https://github-readme-showwcase-cards.vercel.app/"
 
     def get_data(self):
         headers = {'Authorization': 'Bearer ' + self.api_key}
