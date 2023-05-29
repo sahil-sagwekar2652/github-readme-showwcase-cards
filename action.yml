@@ -49,10 +49,10 @@ runs:
       shell: bash
       run: |
         python ${{ github.action_path }}/action.py \
-        --api-key ${{ inputs.api_key }} \
-        --username ${{ inputs.username }} \
-        --theme ${{ inputs.theme }} \
-        --readme-path ${{ inputs.readme_path }}
+        --api-key "${{ inputs.api_key }}" \
+        --username "${{ inputs.username }}" \
+        --theme "${{ inputs.theme }}" \
+        --readme-path "${{ inputs.readme_path }}"
 
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
