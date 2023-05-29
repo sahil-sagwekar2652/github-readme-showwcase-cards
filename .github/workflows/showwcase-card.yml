@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: sahil-sagwekar2652/github-readme-showwcase-cards@main
-        id: howwcase-cards
+        id: showwcase-cards
         with: 
           api_key: ${{ secrets.SHOWWCASE_API_KEY }}
           theme: "dark"
