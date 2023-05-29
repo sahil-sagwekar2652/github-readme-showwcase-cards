@@ -40,7 +40,7 @@ runs:
     - name: Install dependencies
       shell: bash
       run: |
-        python -m pip install -r ${{ github.action_path }}/requirements.txt
+        python -m pip install -r ${{ github.action_path }}/requirements-workflow.txt
 
     - name: Update readme
       shell: bash
