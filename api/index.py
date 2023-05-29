@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, url_for, redirect, render_template
+from flask import Flask, request, render_template
 from flask.wrappers import Response
 import os
 

@@ -22,7 +22,7 @@ class profileParser:
             "name": data["displayName"],
             "username": self.username,
             "headline": data["headline"],
-            "avatar": data["profilePictureKey"],
+            "avatar": data["profilePictureUrl"],
             "profile_url": data["domain"],
             "resume": data["resumeUrl"],
             "theme": self.theme,
