@@ -1,6 +1,8 @@
 name: "GitHub Readme Showwcase Cards"
 author: "Sahil Sagwekar"
 description: "Workflow for displaying your Showwcase profile as an SVG"
+  icon: "box"
+  color: "blue"
 
 inputs:
   api_key:
