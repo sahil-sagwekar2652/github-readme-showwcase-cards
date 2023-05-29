@@ -1,0 +1,20 @@
+name: Showwcase Profile Card
+on:
+  schedule:
+    # Runs every day at 12:00
+    - cron: "0 12 * * *"
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: sahil-sagwekar2652/github-readme-showwcase-cards@main
+        id: howwcase-cards
+        with: 
+          api_key: ${{ secrets.SHOWWCASE_API_KEY }}
+          theme: "dark"
+          username: "sahil-sagwekar2652"
