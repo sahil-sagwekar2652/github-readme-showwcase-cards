@@ -21,7 +21,7 @@ class profileParser:
         params = {
             "name": data["displayName"],
             "username": self.username,
-            "headline": data["headline"],
+            "headline": "<![CDATA[" + data["headline"] + "]]>",
             "avatar": data["profilePictureUrl"],
             "profile_url": data["domain"],
             "resume": data["resumeUrl"],
