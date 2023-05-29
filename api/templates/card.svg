@@ -2,7 +2,7 @@
   <circle cx='100' cy='100' r='50' fill='#f0f0f0' />
   <image xlink:href='{{ avatar }}' x='50' y='50' width='100' height='100' clip-path='url(#circleCrop)' />
 
-  <text x='180' y='70' font-family='Arial' font-size='18' fill='#333333'>{{ username }}</text>
+  <text x='180' y='70' font-family='Arial' font-size='18' fill='#333333'><![CDATA[{{ username }}]]></text>
   <text x='180' y='100' font-family='Arial' font-size='14' fill='#666666'>{{ headline }}</text>
 
   <a xlink:href='{{ resume }}'>
