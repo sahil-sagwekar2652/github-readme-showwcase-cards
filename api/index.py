@@ -23,6 +23,7 @@ def index():
             status=200,
             response=render_template(
                 'card.svg',
+                name=request.args.get('name'),
                 username=request.args.get('username'),
                 headline=request.args.get('headline'),
                 resume=request.args.get('resume'),
