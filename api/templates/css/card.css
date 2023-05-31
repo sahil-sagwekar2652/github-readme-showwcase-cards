@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap');
+
+text {
+  font-family: "Inter";
+  font-size: 14px;
+  color: #fff;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.semi-bold {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.resume {
+  font-family: "Arial";
+  font-weight: 400;
+}
