@@ -2,6 +2,8 @@ from flask import Flask, request, render_template
 from flask.wrappers import Response
 import os
 
+from .utils import data_uri_from_url
+
 
 app = Flask(__name__, template_folder='templates')
 app.secret_key = os.getenv('SECRET_KEY')
@@ -29,7 +31,7 @@ def index():
                 resume=request.args.get('resume'),
                 bg_color=bg_color,
                 text_color=text_color,
-                avatar=request.args.get('avatar'),
+                avatar=data_uri_from_url(request.args.get('avatar')),
                 ),
             mimetype="image/svg+xml",
             )
