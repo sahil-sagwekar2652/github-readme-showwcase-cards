@@ -8,6 +8,9 @@ from .utils import data_uri_from_url
 app = Flask(__name__, template_folder='templates')
 app.secret_key = os.getenv('SECRET_KEY')
 
+# enable jinja2 autoescape for all files including SVG files
+app.jinja_options["autoescape"] = True
+
 
 @app.route('/')
 def index():
@@ -21,6 +24,7 @@ def index():
             bg_color = '#0000'
             text_color = '#ffff'
 
+        print(data_uri_from_url(request.args.get('avatar')))
         response = Response(
             status=200,
             response=render_template(
