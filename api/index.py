@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 from flask.wrappers import Response
 import os
 
-from mypackages.utils import data_uri_from_url
+from .utils import data_uri_from_url
 
 
 app = Flask(__name__, template_folder='templates')

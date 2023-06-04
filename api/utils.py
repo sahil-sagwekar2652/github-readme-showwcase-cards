@@ -1,6 +1,6 @@
 import codecs
 from typing import Optional
-from urllib.request import urlopen
+from urllib.request import urlopen, Request
 
 
 def data_uri_from_bytes(*, data: bytes, mime_type: str) -> str:
@@ -17,7 +17,9 @@ def data_uri_from_url(url: str, *, mime_type: Optional[str] = None) -> str:
     Raises:
         HTTPError: If the request fails
     """
-    with urlopen(url) as response:
+    request_site = Request(url, headers={"User-Agent": "Mozilla/5.0"})
+
+    with urlopen(request_site) as response:
         data = response.read()
     mime_type = mime_type or response.headers["Content-Type"] or "image/jpeg"
     assert mime_type is not None
