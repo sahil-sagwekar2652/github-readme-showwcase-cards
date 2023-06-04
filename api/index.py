@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 from flask.wrappers import Response
 import os
 
-from .utils import data_uri_from_url
+from mypackages.utils import data_uri_from_url
 
 
 app = Flask(__name__, template_folder='templates')
@@ -24,7 +24,6 @@ def index():
             bg_color = '#0000'
             text_color = '#ffff'
 
-        print(data_uri_from_url(request.args.get('avatar')))
         response = Response(
             status=200,
             response=render_template(

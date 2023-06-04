@@ -1,13 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="380" height="225">
   <style>
-    @import 'css/card.css'
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap');
+    {% include "css/card.css" %}
   </style>
 
   <!-- Background -->
   <rect width="100%" height="100%" fill="#171718" rx="10" />
 
   <!-- Showwcase logo & name -->
-  <image xlink:href="showwcase_logo.svg" x="100" y="15" />
+  <image xlink:href="{{ url_for('static', filename='showwcase_logo.svg') }}" x="100" y="15" />
   <text x="155" y="45" class="bold" font-size="24">Showwcase</text>
 
   <!-- Group for Profile Content -->
@@ -19,7 +20,7 @@
       </clipPath>
     </defs>
     <a xlink:href="https://showwcase.com/{{ username }}" target="_blank" rel="noopener noreferrer">
-      <image xlink:href="{{ avatar }}" x='30' y='75' width='100' height='100' clip-path='url(#circle-clip)'/>
+      <image href="{{ avatar }}" x='30' y='75' width='100' height='100' clip-path='url(#circle-clip)'/>
     </a>
 
     <!-- Name -->
