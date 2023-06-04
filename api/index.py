@@ -2,11 +2,14 @@ from flask import Flask, request, render_template
 from flask.wrappers import Response
 import os
 
-from .utils import data_uri_from_url
+from utils import data_uri_from_url, data_uri_from_file
 
 
 app = Flask(__name__, template_folder='templates')
 app.secret_key = os.getenv('SECRET_KEY')
+
+# make data_uri_from_file function globally accessible
+app.jinja_env.globals.update(data_uri_from_file=data_uri_from_file)
 
 # enable jinja2 autoescape for all files including SVG files
 app.jinja_options["autoescape"] = True
