@@ -1,9 +1,10 @@
 name: "GitHub Readme Showwcase Cards"
 author: "Sahil Sagwekar"
 description: "Workflow for displaying your Showwcase profile as an SVG"
+# https://actions-cool.github.io/github-action-branding/
 branding:
-  icon: "grid"
-  color: "red"
+  icon: 'briefcase'
+  color: 'gray-dark'
 
 inputs:
   api_key:
