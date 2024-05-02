@@ -1,4 +1,5 @@
 # Showwcase Readme Cards
+[![My Skills](https://skillicons.dev/icons?i=py,flask,vercel,githubactions&theme=light)](https://skillicons.dev)
 
 ## How to Use 
 
